@@ -74,11 +74,13 @@ def get_tweets_geoloc(query,lat,lon,radius,year,month,day,endday,loc):
             chirp['username'] = tweet.username
             chirp['text'] = tweet.text
             chirp['tweet_date'] = tweet.timestamp
+            chirp['hashtag'] = tweet.hashtags
             chirp['tweet_url'] = 'https://twitter.com'+tweet.tweet_url 
             chirp['search_term'] = query
             chirp['lat'] = lat
             chirp['long'] = lon
             chirp['region'] = loc
+            
             tweets.append(chirp)
         df = pd.DataFrame(tweets)
     df.to_csv(os.curdir+os.sep+f_name+'_'+loc+'_'+str(month)+'_'\
@@ -91,7 +93,7 @@ network connections without closing causing too many files open error.
 Batching also allows finer control over how many tweets we get 
 '''
 
-def batch_tweet_retrieval(f,batch_size_days = 10):
+def batch_tweet_retrieval(f,batch_size_days = 11):
     '''
     For each location given in tweet_lat_lon list retrieve tweets for each month 
     using batch_size_days as the batch size. default can be overriden in 
