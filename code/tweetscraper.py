@@ -80,7 +80,6 @@ def get_tweets_geoloc(query,lat,lon,radius,year,month,day,endday,loc):
             chirp['lat'] = lat
             chirp['long'] = lon
             chirp['region'] = loc
-            
             tweets.append(chirp)
         df = pd.DataFrame(tweets)
     df.to_csv(os.curdir+os.sep+f_name+'_'+loc+'_'+str(month)+'_'\
