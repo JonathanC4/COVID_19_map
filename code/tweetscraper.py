@@ -25,14 +25,17 @@ DSI-SF Created additional variables for batching function
 '''
 tweet_months = [3,4,5]
 tweet_year = [2020]
-tweet_lat_lon = [[37.7749,-122.194, 'SF'], 
-               [34.0522, -118.2437,'LA']
+
+tweet_lat_lon = [ [37.7749,-122.194, 'SF'],
+                  [34.0522,-118.2437, 'LA'],
+                  [35.371652,-119.019531,'BAKERSFIELD']
+                  [38.5816, -121.4944, "SAC"],
+                  [32.7157, -117.1611, "SD" ],
+                  [40.5865, -122.3917, "REDDING"]
             ] 
 lat_lon_radius = '40mi'
 f_name ='tweet'
 f_extension = '.csv'
-
-
 
 '''
 get_tweets and get_tweets_geoloc are provided by DSI-NY cohort.
@@ -53,6 +56,7 @@ def get_tweets(query, year, month, day,endday,loc):
             chirp['text'] = tweet.text
             chirp['tweet_url'] = 'https://twitter.com'+tweet.tweet_url  
             chirp['tweet_date'] = tweet.timestamp
+            chirp['hashtag'] = tweet.hashtags
             chirp['search_term'] = query
             chirp['city'] = np.NaN 
             chirp['lat'] = np.NaN
@@ -73,9 +77,9 @@ def get_tweets_geoloc(query,lat,lon,radius,year,month,day,endday,loc):
             chirp['tweet_id'] = tweet.tweet_id
             chirp['username'] = tweet.username
             chirp['text'] = tweet.text
+            chirp['tweet_url'] = 'https://twitter.com'+tweet.tweet_url              
             chirp['tweet_date'] = tweet.timestamp
             chirp['hashtag'] = tweet.hashtags
-            chirp['tweet_url'] = 'https://twitter.com'+tweet.tweet_url 
             chirp['search_term'] = query
             chirp['lat'] = lat
             chirp['long'] = lon
@@ -92,7 +96,7 @@ network connections without closing causing too many files open error.
 Batching also allows finer control over how many tweets we get 
 '''
 
-def batch_tweet_retrieval(f,batch_size_days = 11):
+def batch_tweet_retrieval(f,batch_size_days = 13):
     '''
     For each location given in tweet_lat_lon list retrieve tweets for each month 
     using batch_size_days as the batch size. default can be overriden in 
@@ -144,4 +148,4 @@ def batch_tweet_retrieval(f,batch_size_days = 11):
 
 
 batch_tweet_retrieval(get_tweets_geoloc)
-batch_tweet_retrieval(get_tweets)
+#batch_tweet_retrieval(get_tweets)
