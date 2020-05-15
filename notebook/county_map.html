@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_744a6ceb681f486ba2eb71434eb9dd6d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_744a6ceb681f486ba2eb71434eb9dd6d" ></div>
+        
+</body>
+<script>    
+    
+            var map_744a6ceb681f486ba2eb71434eb9dd6d = L.map(
+                "map_744a6ceb681f486ba2eb71434eb9dd6d",
+                {
+                    center: [36.7783, -119.4179],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_744a6ceb681f486ba2eb71434eb9dd6d);
+
+            
+
+        
+    
+            var tile_layer_d99084a4e273425c98346f123eefb74c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_744a6ceb681f486ba2eb71434eb9dd6d);
+        
+    
+            var marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0 = L.markerClusterGroup(
+                {}
+            );
+            map_744a6ceb681f486ba2eb71434eb9dd6d.addLayer(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+            var circle_marker_a09567c0e8504a2e93d805887d599352 = L.circleMarker(
+                [37.6090291, -121.899142],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_506bf40823e141149e72e9b5b782a7fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47c0b8cfabf448f188f525025f5599be = $(`<div id="html_47c0b8cfabf448f188f525025f5599be" style="width: 100.0%; height: 100.0%;">Alameda Deaths:76 Cases:2178</div>`)[0];
+            popup_506bf40823e141149e72e9b5b782a7fd.setContent(html_47c0b8cfabf448f188f525025f5599be);
+        
+
+        circle_marker_a09567c0e8504a2e93d805887d599352.bindPopup(popup_506bf40823e141149e72e9b5b782a7fd)
+        ;
+
+        
+    
+    
+            var circle_marker_39cec4d778f74ad5ac93fd4cfdc510d5 = L.circleMarker(
+                [38.5893934, -119.8345013],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_f3b29f6e2ec043fba9f8a8ef6579ed64 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_501576c723444573881687023f12852f = $(`<div id="html_501576c723444573881687023f12852f" style="width: 100.0%; height: 100.0%;">Alpine Deaths:0 Cases:1</div>`)[0];
+            popup_f3b29f6e2ec043fba9f8a8ef6579ed64.setContent(html_501576c723444573881687023f12852f);
+        
+
+        circle_marker_39cec4d778f74ad5ac93fd4cfdc510d5.bindPopup(popup_f3b29f6e2ec043fba9f8a8ef6579ed64)
+        ;
+
+        
+    
+    
+            var circle_marker_0be88077dbb840df82583583acf37f28 = L.circleMarker(
+                [38.449089, -120.5911018],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_ff00a76dede14ead80c199a9b394f84b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbadc5bd31c246e9b3d06ed6aad358d0 = $(`<div id="html_fbadc5bd31c246e9b3d06ed6aad358d0" style="width: 100.0%; height: 100.0%;">Amador Deaths:0 Cases:9</div>`)[0];
+            popup_ff00a76dede14ead80c199a9b394f84b.setContent(html_fbadc5bd31c246e9b3d06ed6aad358d0);
+        
+
+        circle_marker_0be88077dbb840df82583583acf37f28.bindPopup(popup_ff00a76dede14ead80c199a9b394f84b)
+        ;
+
+        
+    
+    
+            var circle_marker_d33a039d7a4c400ba19e937253d94fe8 = L.circleMarker(
+                [39.6519275, -121.5858444],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_5391465d6024437082e51fd698c03f4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f4c7d88e0424168a7dff2db27022447 = $(`<div id="html_7f4c7d88e0424168a7dff2db27022447" style="width: 100.0%; height: 100.0%;">Butte Deaths:0 Cases:20</div>`)[0];
+            popup_5391465d6024437082e51fd698c03f4f.setContent(html_7f4c7d88e0424168a7dff2db27022447);
+        
+
+        circle_marker_d33a039d7a4c400ba19e937253d94fe8.bindPopup(popup_5391465d6024437082e51fd698c03f4f)
+        ;
+
+        
+    
+    
+            var circle_marker_7ef7a1b74b504a3492c21752a684b43d = L.circleMarker(
+                [38.2558181, -120.4981492],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_aead1a5c706a4f9d9ff4dbbc0c8f4e1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7d74562e89a46af83451ea98f9adb2d = $(`<div id="html_d7d74562e89a46af83451ea98f9adb2d" style="width: 100.0%; height: 100.0%;">Calaveras Deaths:0 Cases:13</div>`)[0];
+            popup_aead1a5c706a4f9d9ff4dbbc0c8f4e1c.setContent(html_d7d74562e89a46af83451ea98f9adb2d);
+        
+
+        circle_marker_7ef7a1b74b504a3492c21752a684b43d.bindPopup(popup_aead1a5c706a4f9d9ff4dbbc0c8f4e1c)
+        ;
+
+        
+    
+    
+            var circle_marker_d13c6f7d6cd744609e9207569eeb6ee4 = L.circleMarker(
+                [39.1465578, -122.2209563],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_349caa60792f45369593f0b88b86e1ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4cec75403674e4e957bef0ec7a7d5e6 = $(`<div id="html_c4cec75403674e4e957bef0ec7a7d5e6" style="width: 100.0%; height: 100.0%;">Colusa Deaths:0 Cases:3</div>`)[0];
+            popup_349caa60792f45369593f0b88b86e1ff.setContent(html_c4cec75403674e4e957bef0ec7a7d5e6);
+        
+
+        circle_marker_d13c6f7d6cd744609e9207569eeb6ee4.bindPopup(popup_349caa60792f45369593f0b88b86e1ff)
+        ;
+
+        
+    
+    
+            var circle_marker_f1fc3c8637a34365a11348cd7ac6503a = L.circleMarker(
+                [37.9034806, -121.9175345],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_994d066e34e74bb1977cf8d7b48004e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4bd5f2f6f904b9ea67ff91c6b5a198e = $(`<div id="html_b4bd5f2f6f904b9ea67ff91c6b5a198e" style="width: 100.0%; height: 100.0%;">Contra Costa Deaths:33 Cases:1080</div>`)[0];
+            popup_994d066e34e74bb1977cf8d7b48004e0.setContent(html_b4bd5f2f6f904b9ea67ff91c6b5a198e);
+        
+
+        circle_marker_f1fc3c8637a34365a11348cd7ac6503a.bindPopup(popup_994d066e34e74bb1977cf8d7b48004e0)
+        ;
+
+        
+    
+    
+            var circle_marker_98dc8bea18d84a4c82bff13b03f807a8 = L.circleMarker(
+                [41.7261767, -123.91328],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_1d2ecdac44c14aed9da0a6a69f944469 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0acb67ee47a64a90a7d69180b53bac9f = $(`<div id="html_0acb67ee47a64a90a7d69180b53bac9f" style="width: 100.0%; height: 100.0%;">Del Norte Deaths:0 Cases:4</div>`)[0];
+            popup_1d2ecdac44c14aed9da0a6a69f944469.setContent(html_0acb67ee47a64a90a7d69180b53bac9f);
+        
+
+        circle_marker_98dc8bea18d84a4c82bff13b03f807a8.bindPopup(popup_1d2ecdac44c14aed9da0a6a69f944469)
+        ;
+
+        
+    
+    
+            var circle_marker_e2895ef992f047c7b4481d865cb78635 = L.circleMarker(
+                [38.7574137, -120.5276129],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_e1d04ad13a094987a20bca1877fdce9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_282bc560a0d64cf0998a5e9cbe111396 = $(`<div id="html_282bc560a0d64cf0998a5e9cbe111396" style="width: 100.0%; height: 100.0%;">El Dorado Deaths:0 Cases:60</div>`)[0];
+            popup_e1d04ad13a094987a20bca1877fdce9b.setContent(html_282bc560a0d64cf0998a5e9cbe111396);
+        
+
+        circle_marker_e2895ef992f047c7b4481d865cb78635.bindPopup(popup_e1d04ad13a094987a20bca1877fdce9b)
+        ;
+
+        
+    
+    
+            var circle_marker_ae22b78bdc1145d1897c3a82117c836e = L.circleMarker(
+                [36.7295295, -119.70886126075588],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_7116a22c2bc84b5aa162eb433c9389cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eaf79bc8f561419ea19b29be47c8d350 = $(`<div id="html_eaf79bc8f561419ea19b29be47c8d350" style="width: 100.0%; height: 100.0%;">Fresno Deaths:13 Cases:1014</div>`)[0];
+            popup_7116a22c2bc84b5aa162eb433c9389cc.setContent(html_eaf79bc8f561419ea19b29be47c8d350);
+        
+
+        circle_marker_ae22b78bdc1145d1897c3a82117c836e.bindPopup(popup_7116a22c2bc84b5aa162eb433c9389cc)
+        ;
+
+        
+    
+    
+            var circle_marker_e5f06657c30046c8904940abbb6536d1 = L.circleMarker(
+                [39.5912766, -122.3778662],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_5a9d321b8b7643368c5e3aa9a3ade7e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_137f9322dfb04f3caa11e64ac09920cf = $(`<div id="html_137f9322dfb04f3caa11e64ac09920cf" style="width: 100.0%; height: 100.0%;">Glenn Deaths:0 Cases:7</div>`)[0];
+            popup_5a9d321b8b7643368c5e3aa9a3ade7e5.setContent(html_137f9322dfb04f3caa11e64ac09920cf);
+        
+
+        circle_marker_e5f06657c30046c8904940abbb6536d1.bindPopup(popup_5a9d321b8b7643368c5e3aa9a3ade7e5)
+        ;
+
+        
+    
+    
+            var circle_marker_bbbd39c6ba474fb1b6eff18f18eea1c2 = L.circleMarker(
+                [40.5997415, -123.8997734],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_7bddbfc913c14b00a00c8a8cacd99338 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a8b42c3e2014db78fa7f9ae3333fd45 = $(`<div id="html_7a8b42c3e2014db78fa7f9ae3333fd45" style="width: 100.0%; height: 100.0%;">Humboldt Deaths:0 Cases:67</div>`)[0];
+            popup_7bddbfc913c14b00a00c8a8cacd99338.setContent(html_7a8b42c3e2014db78fa7f9ae3333fd45);
+        
+
+        circle_marker_bbbd39c6ba474fb1b6eff18f18eea1c2.bindPopup(popup_7bddbfc913c14b00a00c8a8cacd99338)
+        ;
+
+        
+    
+    
+            var circle_marker_a305da89dac6415db6e6c30331bc0c32 = L.circleMarker(
+                [33.0305487, -115.3595666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_600b21f3b804428c953efedbdbc11302 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a863cba3e2c46bab24b7119ef1c200a = $(`<div id="html_8a863cba3e2c46bab24b7119ef1c200a" style="width: 100.0%; height: 100.0%;">Imperial Deaths:14 Cases:647</div>`)[0];
+            popup_600b21f3b804428c953efedbdbc11302.setContent(html_8a863cba3e2c46bab24b7119ef1c200a);
+        
+
+        circle_marker_a305da89dac6415db6e6c30331bc0c32.bindPopup(popup_600b21f3b804428c953efedbdbc11302)
+        ;
+
+        
+    
+    
+            var circle_marker_7e2fbd98a7924dbfa0a32edb303ea573 = L.circleMarker(
+                [36.5595325, -117.4074712],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_dc711924b00c4307afe13dc5fa7fda18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55e77f3dedea41dda6d7c7243a41546f = $(`<div id="html_55e77f3dedea41dda6d7c7243a41546f" style="width: 100.0%; height: 100.0%;">Inyo Deaths:1 Cases:19</div>`)[0];
+            popup_dc711924b00c4307afe13dc5fa7fda18.setContent(html_55e77f3dedea41dda6d7c7243a41546f);
+        
+
+        circle_marker_7e2fbd98a7924dbfa0a32edb303ea573.bindPopup(popup_dc711924b00c4307afe13dc5fa7fda18)
+        ;
+
+        
+    
+    
+            var circle_marker_e63698bcac5745c8a9beb2da3085c9ba = L.circleMarker(
+                [35.3145701, -118.7538222],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_fe6e3f36bcef4ec89a928614e9048e9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8ceff020cd745649736d10906bd526a = $(`<div id="html_e8ceff020cd745649736d10906bd526a" style="width: 100.0%; height: 100.0%;">Kern Deaths:17 Cases:1343</div>`)[0];
+            popup_fe6e3f36bcef4ec89a928614e9048e9c.setContent(html_e8ceff020cd745649736d10906bd526a);
+        
+
+        circle_marker_e63698bcac5745c8a9beb2da3085c9ba.bindPopup(popup_fe6e3f36bcef4ec89a928614e9048e9c)
+        ;
+
+        
+    
+    
+            var circle_marker_95bb9d19e18944f0aba80923a5f660d0 = L.circleMarker(
+                [36.0784807, -119.7956342],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_ea08ddc9e49840de98259db0c43bf42a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72766329f63847b98eda74d138efc24c = $(`<div id="html_72766329f63847b98eda74d138efc24c" style="width: 100.0%; height: 100.0%;">Kings Deaths:1 Cases:348</div>`)[0];
+            popup_ea08ddc9e49840de98259db0c43bf42a.setContent(html_72766329f63847b98eda74d138efc24c);
+        
+
+        circle_marker_95bb9d19e18944f0aba80923a5f660d0.bindPopup(popup_ea08ddc9e49840de98259db0c43bf42a)
+        ;
+
+        
+    
+    
+            var circle_marker_2719a9f5005048b4a1150cfeb0342e28 = L.circleMarker(
+                [36.7014631, -118.7559974],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_64db8852bf874464b7f40a17a2530a05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98d81b6c95af4c2a9ce4e21dd0ead016 = $(`<div id="html_98d81b6c95af4c2a9ce4e21dd0ead016" style="width: 100.0%; height: 100.0%;">Lake Deaths:0 Cases:8</div>`)[0];
+            popup_64db8852bf874464b7f40a17a2530a05.setContent(html_98d81b6c95af4c2a9ce4e21dd0ead016);
+        
+
+        circle_marker_2719a9f5005048b4a1150cfeb0342e28.bindPopup(popup_64db8852bf874464b7f40a17a2530a05)
+        ;
+
+        
+    
+    
+            var circle_marker_2568aa16e877494e98eb2e1a2ecf06aa = L.circleMarker(
+                [40.7685579, -120.730998],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_399ad3c3ac9c4e07a3d8c8cd74537191 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52e274692c3f428fa14e72d889fcbfd3 = $(`<div id="html_52e274692c3f428fa14e72d889fcbfd3" style="width: 100.0%; height: 100.0%;">Lassen Deaths:0 Cases:0</div>`)[0];
+            popup_399ad3c3ac9c4e07a3d8c8cd74537191.setContent(html_52e274692c3f428fa14e72d889fcbfd3);
+        
+
+        circle_marker_2568aa16e877494e98eb2e1a2ecf06aa.bindPopup(popup_399ad3c3ac9c4e07a3d8c8cd74537191)
+        ;
+
+        
+    
+    
+            var circle_marker_f46d6d592e844b7bb4abc03b29a7c0ca = L.circleMarker(
+                [34.0536909, -118.2427666],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_3860adb92c9d4ed294c936c2a15ab431 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fc9563032b4405c98c890c180c650e4 = $(`<div id="html_4fc9563032b4405c98c890c180c650e4" style="width: 100.0%; height: 100.0%;">Los Angeles Deaths:1663 Cases:34552</div>`)[0];
+            popup_3860adb92c9d4ed294c936c2a15ab431.setContent(html_4fc9563032b4405c98c890c180c650e4);
+        
+
+        circle_marker_f46d6d592e844b7bb4abc03b29a7c0ca.bindPopup(popup_3860adb92c9d4ed294c936c2a15ab431)
+        ;
+
+        
+    
+    
+            var circle_marker_5eac52cd37754450b1278496675969a3 = L.circleMarker(
+                [36.9418115, -120.17143817857144],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_8f67d58a862f41ed98cc353a28672654 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04f2220a2ee44c698d0b90f65b45f6dd = $(`<div id="html_04f2220a2ee44c698d0b90f65b45f6dd" style="width: 100.0%; height: 100.0%;">Madera Deaths:2 Cases:69</div>`)[0];
+            popup_8f67d58a862f41ed98cc353a28672654.setContent(html_04f2220a2ee44c698d0b90f65b45f6dd);
+        
+
+        circle_marker_5eac52cd37754450b1278496675969a3.bindPopup(popup_8f67d58a862f41ed98cc353a28672654)
+        ;
+
+        
+    
+    
+            var circle_marker_5869d6327d164f7cb01adc0c25400026 = L.circleMarker(
+                [38.0409144, -122.6199638],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_5f0ca41e2a0540e897af41cb4a5b138e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9f84596699e4121a123b28237777a83 = $(`<div id="html_b9f84596699e4121a123b28237777a83" style="width: 100.0%; height: 100.0%;">Marin Deaths:14 Cases:275</div>`)[0];
+            popup_5f0ca41e2a0540e897af41cb4a5b138e.setContent(html_b9f84596699e4121a123b28237777a83);
+        
+
+        circle_marker_5869d6327d164f7cb01adc0c25400026.bindPopup(popup_5f0ca41e2a0540e897af41cb4a5b138e)
+        ;
+
+        
+    
+    
+            var circle_marker_a09b44e91acd4617beb524f5731500e0 = L.circleMarker(
+                [37.570148, -119.9036592],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_a8c69bc83c06400cb032dbc115a73e12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5caaee14fa004ff2adfcb767f2c072b2 = $(`<div id="html_5caaee14fa004ff2adfcb767f2c072b2" style="width: 100.0%; height: 100.0%;">Mariposa Deaths:0 Cases:15</div>`)[0];
+            popup_a8c69bc83c06400cb032dbc115a73e12.setContent(html_5caaee14fa004ff2adfcb767f2c072b2);
+        
+
+        circle_marker_a09b44e91acd4617beb524f5731500e0.bindPopup(popup_a8c69bc83c06400cb032dbc115a73e12)
+        ;
+
+        
+    
+    
+            var circle_marker_d7f7f814a53c42b29654d3eaf4ec9711 = L.circleMarker(
+                [39.3176491, -123.4126399],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_a4bc8315212c492fba67cd8f79ebe861 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b267becf9e974168a291757a7c2ef616 = $(`<div id="html_b267becf9e974168a291757a7c2ef616" style="width: 100.0%; height: 100.0%;">Mendocino Deaths:0 Cases:13</div>`)[0];
+            popup_a4bc8315212c492fba67cd8f79ebe861.setContent(html_b267becf9e974168a291757a7c2ef616);
+        
+
+        circle_marker_d7f7f814a53c42b29654d3eaf4ec9711.bindPopup(popup_a4bc8315212c492fba67cd8f79ebe861)
+        ;
+
+        
+    
+    
+            var circle_marker_5bda990f73c542a29c5ed8f65c746ae9 = L.circleMarker(
+                [37.1641544, -120.7678602],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_1cd73e18e5204116aa6d2fc4fad05505 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd798bbaa5a3415b83842f1be9a247dc = $(`<div id="html_bd798bbaa5a3415b83842f1be9a247dc" style="width: 100.0%; height: 100.0%;">Merced Deaths:4 Cases:180</div>`)[0];
+            popup_1cd73e18e5204116aa6d2fc4fad05505.setContent(html_bd798bbaa5a3415b83842f1be9a247dc);
+        
+
+        circle_marker_5bda990f73c542a29c5ed8f65c746ae9.bindPopup(popup_1cd73e18e5204116aa6d2fc4fad05505)
+        ;
+
+        
+    
+    
+            var circle_marker_1d6fc43aefd14742917fda8a4e709054 = L.circleMarker(
+                [41.5450487, -120.7435998],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_9e30c5447dee46cfa5ddc199b88ae19b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22d3c07725ce479294687c13321910d8 = $(`<div id="html_22d3c07725ce479294687c13321910d8" style="width: 100.0%; height: 100.0%;">Modoc Deaths:0 Cases:0</div>`)[0];
+            popup_9e30c5447dee46cfa5ddc199b88ae19b.setContent(html_22d3c07725ce479294687c13321910d8);
+        
+
+        circle_marker_1d6fc43aefd14742917fda8a4e709054.bindPopup(popup_9e30c5447dee46cfa5ddc199b88ae19b)
+        ;
+
+        
+    
+    
+            var circle_marker_daad7b645b454e78b161394b88895e2c = L.circleMarker(
+                [37.9533927, -118.9398758],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_9ca8d0bf2c1145c78f35d0fa70e45610 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_336030e48391444e972a7a4ba75c955f = $(`<div id="html_336030e48391444e972a7a4ba75c955f" style="width: 100.0%; height: 100.0%;">Mono Deaths:1 Cases:33</div>`)[0];
+            popup_9ca8d0bf2c1145c78f35d0fa70e45610.setContent(html_336030e48391444e972a7a4ba75c955f);
+        
+
+        circle_marker_daad7b645b454e78b161394b88895e2c.bindPopup(popup_9ca8d0bf2c1145c78f35d0fa70e45610)
+        ;
+
+        
+    
+    
+            var circle_marker_9072bd9f4864417780dd282500cb74b6 = L.circleMarker(
+                [36.2231079, -121.3877428],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_23df4dcfdc454c9480e7db3e3f3f169b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1f1d262c613442bfa838a49a568da7de = $(`<div id="html_1f1d262c613442bfa838a49a568da7de" style="width: 100.0%; height: 100.0%;">Monterey Deaths:6 Cases:308</div>`)[0];
+            popup_23df4dcfdc454c9480e7db3e3f3f169b.setContent(html_1f1d262c613442bfa838a49a568da7de);
+        
+
+        circle_marker_9072bd9f4864417780dd282500cb74b6.bindPopup(popup_23df4dcfdc454c9480e7db3e3f3f169b)
+        ;
+
+        
+    
+    
+            var circle_marker_2247e299be6947e89477af0426c0b7fe = L.circleMarker(
+                [38.2971367, -122.2855293],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_bbdd41b55b58466ebbc90d8cdc3830b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea44fa31d02048e4a22d54ca17af3ad4 = $(`<div id="html_ea44fa31d02048e4a22d54ca17af3ad4" style="width: 100.0%; height: 100.0%;">Napa Deaths:3 Cases:81</div>`)[0];
+            popup_bbdd41b55b58466ebbc90d8cdc3830b9.setContent(html_ea44fa31d02048e4a22d54ca17af3ad4);
+        
+
+        circle_marker_2247e299be6947e89477af0426c0b7fe.bindPopup(popup_bbdd41b55b58466ebbc90d8cdc3830b9)
+        ;
+
+        
+    
+    
+            var circle_marker_c43679cbc1d348faa00746c038cfccb5 = L.circleMarker(
+                [39.3540335, -120.8089843],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_e4c7256fd91f439cbeb54f1a61979c3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ba9c53f2f7f4889a53650e2c9949845 = $(`<div id="html_7ba9c53f2f7f4889a53650e2c9949845" style="width: 100.0%; height: 100.0%;">Nevada Deaths:1 Cases:41</div>`)[0];
+            popup_e4c7256fd91f439cbeb54f1a61979c3d.setContent(html_7ba9c53f2f7f4889a53650e2c9949845);
+        
+
+        circle_marker_c43679cbc1d348faa00746c038cfccb5.bindPopup(popup_e4c7256fd91f439cbeb54f1a61979c3d)
+        ;
+
+        
+    
+    
+            var circle_marker_e1834342488149e794cfda6dd64e82bf = L.circleMarker(
+                [33.7500378, -117.8704931],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_37ba10f4fbac4876a5fc03b5e359fae3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2d0cffffa25476583a1eff6703ea4cc = $(`<div id="html_c2d0cffffa25476583a1eff6703ea4cc" style="width: 100.0%; height: 100.0%;">Orange Deaths:80 Cases:3749</div>`)[0];
+            popup_37ba10f4fbac4876a5fc03b5e359fae3.setContent(html_c2d0cffffa25476583a1eff6703ea4cc);
+        
+
+        circle_marker_e1834342488149e794cfda6dd64e82bf.bindPopup(popup_37ba10f4fbac4876a5fc03b5e359fae3)
+        ;
+
+        
+    
+    
+            var circle_marker_6e013c748196494f806db4bed6d0f189 = L.circleMarker(
+                [39.1012064, -120.7650606],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_1c590e0633c7487d830bd1ebf03b8743 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_592ec5d4d3214eb998c955001f509cd7 = $(`<div id="html_592ec5d4d3214eb998c955001f509cd7" style="width: 100.0%; height: 100.0%;">Placer Deaths:8 Cases:170</div>`)[0];
+            popup_1c590e0633c7487d830bd1ebf03b8743.setContent(html_592ec5d4d3214eb998c955001f509cd7);
+        
+
+        circle_marker_6e013c748196494f806db4bed6d0f189.bindPopup(popup_1c590e0633c7487d830bd1ebf03b8743)
+        ;
+
+        
+    
+    
+            var circle_marker_ac0ca766c4bc4d54b54b8a636564f6d9 = L.circleMarker(
+                [39.9430988, -120.8059521],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_a1e9a4a6fb8b469ab0004c5de4376b7d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4788b553b0894d399483a57eabab1eb0 = $(`<div id="html_4788b553b0894d399483a57eabab1eb0" style="width: 100.0%; height: 100.0%;">Plumas Deaths:0 Cases:4</div>`)[0];
+            popup_a1e9a4a6fb8b469ab0004c5de4376b7d.setContent(html_4788b553b0894d399483a57eabab1eb0);
+        
+
+        circle_marker_ac0ca766c4bc4d54b54b8a636564f6d9.bindPopup(popup_a1e9a4a6fb8b469ab0004c5de4376b7d)
+        ;
+
+        
+    
+    
+            var circle_marker_875cd6ccf85045ef9105f17da6bea317 = L.circleMarker(
+                [33.9533546, -117.3961623],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_29d5b2333bb54ef0b6cdd607edaf36ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a4871c6fc674646bacd2a5d7e897191 = $(`<div id="html_3a4871c6fc674646bacd2a5d7e897191" style="width: 100.0%; height: 100.0%;">Riverside Deaths:228 Cases:5343</div>`)[0];
+            popup_29d5b2333bb54ef0b6cdd607edaf36ab.setContent(html_3a4871c6fc674646bacd2a5d7e897191);
+        
+
+        circle_marker_875cd6ccf85045ef9105f17da6bea317.bindPopup(popup_29d5b2333bb54ef0b6cdd607edaf36ab)
+        ;
+
+        
+    
+    
+            var circle_marker_7617a342536e4bc2bac2c640b45119e4 = L.circleMarker(
+                [38.5815719, -121.4943996],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_b7519609672745a9bc202020840b8997 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_087051293d05486a86659c70c48e9896 = $(`<div id="html_087051293d05486a86659c70c48e9896" style="width: 100.0%; height: 100.0%;">Sacramento Deaths:51 Cases:1183</div>`)[0];
+            popup_b7519609672745a9bc202020840b8997.setContent(html_087051293d05486a86659c70c48e9896);
+        
+
+        circle_marker_7617a342536e4bc2bac2c640b45119e4.bindPopup(popup_b7519609672745a9bc202020840b8997)
+        ;
+
+        
+    
+    
+            var circle_marker_c94c9674a48a427ebe0214c0847a4506 = L.circleMarker(
+                [36.6248089, -121.1177379],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_1a91c05d2cc545098522ee1abd2e4f1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d15cc17d9364312b9d9c3381c91ebec = $(`<div id="html_9d15cc17d9364312b9d9c3381c91ebec" style="width: 100.0%; height: 100.0%;">San Benito Deaths:2 Cases:58</div>`)[0];
+            popup_1a91c05d2cc545098522ee1abd2e4f1d.setContent(html_9d15cc17d9364312b9d9c3381c91ebec);
+        
+
+        circle_marker_c94c9674a48a427ebe0214c0847a4506.bindPopup(popup_1a91c05d2cc545098522ee1abd2e4f1d)
+        ;
+
+        
+    
+    
+            var circle_marker_82ab48b5f7d346d8850a27671d0e8362 = L.circleMarker(
+                [34.8253019, -116.0833144],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_56a58a8abd7d4673a6a4cbff04ed8309 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e75eecdb81f4e22abf3f536b15d152a = $(`<div id="html_6e75eecdb81f4e22abf3f536b15d152a" style="width: 100.0%; height: 100.0%;">San Bernardino Deaths:138 Cases:3153</div>`)[0];
+            popup_56a58a8abd7d4673a6a4cbff04ed8309.setContent(html_6e75eecdb81f4e22abf3f536b15d152a);
+        
+
+        circle_marker_82ab48b5f7d346d8850a27671d0e8362.bindPopup(popup_56a58a8abd7d4673a6a4cbff04ed8309)
+        ;
+
+        
+    
+    
+            var circle_marker_973e7f10c1374110acf6af3e5c1776b8 = L.circleMarker(
+                [32.7174209, -117.1627714],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_eba20198bdca438f9da062cbf2d3f240 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e205e2735ca4045802b90bddf9f92b7 = $(`<div id="html_9e205e2735ca4045802b90bddf9f92b7" style="width: 100.0%; height: 100.0%;">San Diego Deaths:194 Cases:5278</div>`)[0];
+            popup_eba20198bdca438f9da062cbf2d3f240.setContent(html_9e205e2735ca4045802b90bddf9f92b7);
+        
+
+        circle_marker_973e7f10c1374110acf6af3e5c1776b8.bindPopup(popup_eba20198bdca438f9da062cbf2d3f240)
+        ;
+
+        
+    
+    
+            var circle_marker_0ea716fab02f4d90856aa2c87406915f = L.circleMarker(
+                [37.7790262, -122.4199061],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_7214155f3a8249ac9b6f09d7601dbacc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_881894ca32a34c0a944cf77cbac57e4d = $(`<div id="html_881894ca32a34c0a944cf77cbac57e4d" style="width: 100.0%; height: 100.0%;">San Francisco Deaths:35 Cases:1994</div>`)[0];
+            popup_7214155f3a8249ac9b6f09d7601dbacc.setContent(html_881894ca32a34c0a944cf77cbac57e4d);
+        
+
+        circle_marker_0ea716fab02f4d90856aa2c87406915f.bindPopup(popup_7214155f3a8249ac9b6f09d7601dbacc)
+        ;
+
+        
+    
+    
+            var circle_marker_2d57976932754157af1919e1729ecf10 = L.circleMarker(
+                [37.9372901, -121.2773719],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_594a0e05930944708b7e13b40792c453 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5002925355d549a3bdbb2daa09305961 = $(`<div id="html_5002925355d549a3bdbb2daa09305961" style="width: 100.0%; height: 100.0%;">San Joaquin Deaths:31 Cases:638</div>`)[0];
+            popup_594a0e05930944708b7e13b40792c453.setContent(html_5002925355d549a3bdbb2daa09305961);
+        
+
+        circle_marker_2d57976932754157af1919e1729ecf10.bindPopup(popup_594a0e05930944708b7e13b40792c453)
+        ;
+
+        
+    
+    
+            var circle_marker_304f6ed7929a451bafbe969b2f9251ed = L.circleMarker(
+                [35.3540209, -120.3757163],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_326b55a7171149d49fe0a28ddf4f9a9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50056a17b3ad4d0ca97098009f188de0 = $(`<div id="html_50056a17b3ad4d0ca97098009f188de0" style="width: 100.0%; height: 100.0%;">San Luis Obispo Deaths:1 Cases:232</div>`)[0];
+            popup_326b55a7171149d49fe0a28ddf4f9a9c.setContent(html_50056a17b3ad4d0ca97098009f188de0);
+        
+
+        circle_marker_304f6ed7929a451bafbe969b2f9251ed.bindPopup(popup_326b55a7171149d49fe0a28ddf4f9a9c)
+        ;
+
+        
+    
+    
+            var circle_marker_291213af098648fd9193a9cfbc121a60 = L.circleMarker(
+                [37.496904, -122.3330573],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_74af1553990c4107a09b6e996ba6e574 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a083031d58f04eaca0dd764ecf33bdc8 = $(`<div id="html_a083031d58f04eaca0dd764ecf33bdc8" style="width: 100.0%; height: 100.0%;">San Mateo Deaths:65 Cases:1515</div>`)[0];
+            popup_74af1553990c4107a09b6e996ba6e574.setContent(html_a083031d58f04eaca0dd764ecf33bdc8);
+        
+
+        circle_marker_291213af098648fd9193a9cfbc121a60.bindPopup(popup_74af1553990c4107a09b6e996ba6e574)
+        ;
+
+        
+    
+    
+            var circle_marker_5381dbd0d2f742f2951eb90fb1d3d4a4 = L.circleMarker(
+                [34.4221319, -119.7026673],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_a5c4061ed0af4613914528af4ad9ba53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_434bcaf3ef76419698abf80b39f4de71 = $(`<div id="html_434bcaf3ef76419698abf80b39f4de71" style="width: 100.0%; height: 100.0%;">Santa Barbara Deaths:11 Cases:1376</div>`)[0];
+            popup_a5c4061ed0af4613914528af4ad9ba53.setContent(html_434bcaf3ef76419698abf80b39f4de71);
+        
+
+        circle_marker_5381dbd0d2f742f2951eb90fb1d3d4a4.bindPopup(popup_a5c4061ed0af4613914528af4ad9ba53)
+        ;
+
+        
+    
+    
+            var circle_marker_923d460dd5634243ade9805a56e17b11 = L.circleMarker(
+                [37.2333253, -121.6846349],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_54922f9f80144c7698b9108707f8232c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4144806f8fd541dd93ec90e0fcd92d3f = $(`<div id="html_4144806f8fd541dd93ec90e0fcd92d3f" style="width: 100.0%; height: 100.0%;">Santa Clara Deaths:132 Cases:2381</div>`)[0];
+            popup_54922f9f80144c7698b9108707f8232c.setContent(html_4144806f8fd541dd93ec90e0fcd92d3f);
+        
+
+        circle_marker_923d460dd5634243ade9805a56e17b11.bindPopup(popup_54922f9f80144c7698b9108707f8232c)
+        ;
+
+        
+    
+    
+            var circle_marker_ae9a4e0d20bd4629bbd7c83c46faf415 = L.circleMarker(
+                [37.050096, -121.9905908],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_7f9444811c8e44489208b9d7fb34822c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24344ae498624fba8d63136c63090d8a = $(`<div id="html_24344ae498624fba8d63136c63090d8a" style="width: 100.0%; height: 100.0%;">Santa Cruz Deaths:2 Cases:146</div>`)[0];
+            popup_7f9444811c8e44489208b9d7fb34822c.setContent(html_24344ae498624fba8d63136c63090d8a);
+        
+
+        circle_marker_ae9a4e0d20bd4629bbd7c83c46faf415.bindPopup(popup_7f9444811c8e44489208b9d7fb34822c)
+        ;
+
+        
+    
+    
+            var circle_marker_36cdc7a426204c0f94e8fbe0437183de = L.circleMarker(
+                [40.7965121, -121.9979194],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_e9c4e6d7164243fd8717b377565543cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da86cd98fa0d4842981f4f1c3d6800e1 = $(`<div id="html_da86cd98fa0d4842981f4f1c3d6800e1" style="width: 100.0%; height: 100.0%;">Shasta Deaths:4 Cases:32</div>`)[0];
+            popup_e9c4e6d7164243fd8717b377565543cf.setContent(html_da86cd98fa0d4842981f4f1c3d6800e1);
+        
+
+        circle_marker_36cdc7a426204c0f94e8fbe0437183de.bindPopup(popup_e9c4e6d7164243fd8717b377565543cf)
+        ;
+
+        
+    
+    
+            var circle_marker_a40fa2e01aa3480c8f2c2149b62c35ba = L.circleMarker(
+                [39.5849065, -120.5305731],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_aed71453d7234e48a1bb0657114dc143 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_039c800e9ed14b55bfad247ecd8fe5ff = $(`<div id="html_039c800e9ed14b55bfad247ecd8fe5ff" style="width: 100.0%; height: 100.0%;">Sierra Deaths:0 Cases:0</div>`)[0];
+            popup_aed71453d7234e48a1bb0657114dc143.setContent(html_039c800e9ed14b55bfad247ecd8fe5ff);
+        
+
+        circle_marker_a40fa2e01aa3480c8f2c2149b62c35ba.bindPopup(popup_aed71453d7234e48a1bb0657114dc143)
+        ;
+
+        
+    
+    
+            var circle_marker_98840379254541bea0e5b4ff777bb249 = L.circleMarker(
+                [41.5007223, -122.54435414752092],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_e10d74edc2c4442fac6312acdf954eff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a83799f5e3e94aadad0d921d41df332e = $(`<div id="html_a83799f5e3e94aadad0d921d41df332e" style="width: 100.0%; height: 100.0%;">Siskiyou Deaths:0 Cases:5</div>`)[0];
+            popup_e10d74edc2c4442fac6312acdf954eff.setContent(html_a83799f5e3e94aadad0d921d41df332e);
+        
+
+        circle_marker_98840379254541bea0e5b4ff777bb249.bindPopup(popup_e10d74edc2c4442fac6312acdf954eff)
+        ;
+
+        
+    
+    
+            var circle_marker_8ada6005194c450499bfc2791dceb6f3 = L.circleMarker(
+                [38.2218938, -121.9163555],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_7e76cf6facf44c24ad397ba3229bdca3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e68221b1889147689cc0173275c88248 = $(`<div id="html_e68221b1889147689cc0173275c88248" style="width: 100.0%; height: 100.0%;">Solano Deaths:12 Cases:397</div>`)[0];
+            popup_7e76cf6facf44c24ad397ba3229bdca3.setContent(html_e68221b1889147689cc0173275c88248);
+        
+
+        circle_marker_8ada6005194c450499bfc2791dceb6f3.bindPopup(popup_7e76cf6facf44c24ad397ba3229bdca3)
+        ;
+
+        
+    
+    
+            var circle_marker_45c8ee93da7d40e8a661e3725c3a2679 = L.circleMarker(
+                [38.5110803, -122.8473388],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_8c395fd4465b45aaabe69efa6fc73e0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36615a74b09047f3b7beafd5386faf5a = $(`<div id="html_36615a74b09047f3b7beafd5386faf5a" style="width: 100.0%; height: 100.0%;">Sonoma Deaths:4 Cases:337</div>`)[0];
+            popup_8c395fd4465b45aaabe69efa6fc73e0d.setContent(html_36615a74b09047f3b7beafd5386faf5a);
+        
+
+        circle_marker_45c8ee93da7d40e8a661e3725c3a2679.bindPopup(popup_8c395fd4465b45aaabe69efa6fc73e0d)
+        ;
+
+        
+    
+    
+            var circle_marker_66e6fa67267f4655a924f499988c424a = L.circleMarker(
+                [37.5500871, -121.0501425],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_8dcd68ddc7a34c83b9a5009c3183bcd5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1eab961a1c04e59903605742daead3c = $(`<div id="html_a1eab961a1c04e59903605742daead3c" style="width: 100.0%; height: 100.0%;">Stanislaus Deaths:23 Cases:526</div>`)[0];
+            popup_8dcd68ddc7a34c83b9a5009c3183bcd5.setContent(html_a1eab961a1c04e59903605742daead3c);
+        
+
+        circle_marker_66e6fa67267f4655a924f499988c424a.bindPopup(popup_8dcd68ddc7a34c83b9a5009c3183bcd5)
+        ;
+
+        
+    
+    
+            var circle_marker_4c0d2f510d2047bc9efe1849bc1f5eee = L.circleMarker(
+                [38.9509675, -121.697088],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_8dc61b9a369e47ebab18e483128c5be0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_befe28700d354d4a8cafa6d2d5922d49 = $(`<div id="html_befe28700d354d4a8cafa6d2d5922d49" style="width: 100.0%; height: 100.0%;">Sutter Deaths:2 Cases:36</div>`)[0];
+            popup_8dc61b9a369e47ebab18e483128c5be0.setContent(html_befe28700d354d4a8cafa6d2d5922d49);
+        
+
+        circle_marker_4c0d2f510d2047bc9efe1849bc1f5eee.bindPopup(popup_8dc61b9a369e47ebab18e483128c5be0)
+        ;
+
+        
+    
+    
+            var circle_marker_6c712b0b356f473c984788e8c0247a19 = L.circleMarker(
+                [40.1251334, -122.2015529],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_e96c665847ed4fa1a3b556be20b2ebe2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4006733f67fe482286ff8aaa6ee40bce = $(`<div id="html_4006733f67fe482286ff8aaa6ee40bce" style="width: 100.0%; height: 100.0%;">Tehama Deaths:1 Cases:1</div>`)[0];
+            popup_e96c665847ed4fa1a3b556be20b2ebe2.setContent(html_4006733f67fe482286ff8aaa6ee40bce);
+        
+
+        circle_marker_6c712b0b356f473c984788e8c0247a19.bindPopup(popup_e96c665847ed4fa1a3b556be20b2ebe2)
+        ;
+
+        
+    
+    
+            var circle_marker_7a3e262cd7564e04ad79e2e9a4b438ea = L.circleMarker(
+                [40.6053256, -123.171268],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_ef5c9f4a37a24d8587c7a6370e80a763 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f79b7c9d7c3443c2a284fb40c00ce428 = $(`<div id="html_f79b7c9d7c3443c2a284fb40c00ce428" style="width: 100.0%; height: 100.0%;">Trinity Deaths:0 Cases:2</div>`)[0];
+            popup_ef5c9f4a37a24d8587c7a6370e80a763.setContent(html_f79b7c9d7c3443c2a284fb40c00ce428);
+        
+
+        circle_marker_7a3e262cd7564e04ad79e2e9a4b438ea.bindPopup(popup_ef5c9f4a37a24d8587c7a6370e80a763)
+        ;
+
+        
+    
+    
+            var circle_marker_c39621f673e143fa981ba309c48de459 = L.circleMarker(
+                [36.2516475, -118.852583],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_976536fdbdf84928b5268975f74f7850 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5059e0117e3743cabe02aef55c176cb9 = $(`<div id="html_5059e0117e3743cabe02aef55c176cb9" style="width: 100.0%; height: 100.0%;">Tulare Deaths:54 Cases:1268</div>`)[0];
+            popup_976536fdbdf84928b5268975f74f7850.setContent(html_5059e0117e3743cabe02aef55c176cb9);
+        
+
+        circle_marker_c39621f673e143fa981ba309c48de459.bindPopup(popup_976536fdbdf84928b5268975f74f7850)
+        ;
+
+        
+    
+    
+            var circle_marker_705082e3ac104436b7b97851c272be2d = L.circleMarker(
+                [38.056944, -119.9919351],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_ffb41055d23b4f9fa078402a493aa6b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04d3300078d44281951ac9cf37671947 = $(`<div id="html_04d3300078d44281951ac9cf37671947" style="width: 100.0%; height: 100.0%;">Tuolumne Deaths:0 Cases:2</div>`)[0];
+            popup_ffb41055d23b4f9fa078402a493aa6b1.setContent(html_04d3300078d44281951ac9cf37671947);
+        
+
+        circle_marker_705082e3ac104436b7b97851c272be2d.bindPopup(popup_ffb41055d23b4f9fa078402a493aa6b1)
+        ;
+
+        
+    
+    
+            var circle_marker_0e7887a901314710b6fe4650c747d260 = L.circleMarker(
+                [34.4458248, -119.0779359],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_75dfba811855416780409753633cc38b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_071ac7597d7b4de392d4b1b51bad9cf6 = $(`<div id="html_071ac7597d7b4de392d4b1b51bad9cf6" style="width: 100.0%; height: 100.0%;">Ventura Deaths:24 Cases:725</div>`)[0];
+            popup_75dfba811855416780409753633cc38b.setContent(html_071ac7597d7b4de392d4b1b51bad9cf6);
+        
+
+        circle_marker_0e7887a901314710b6fe4650c747d260.bindPopup(popup_75dfba811855416780409753633cc38b)
+        ;
+
+        
+    
+    
+            var circle_marker_388d5af3c12a4d3cb555132a845cccc6 = L.circleMarker(
+                [38.7184542, -121.9059001],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_02a7094cc33248bcb299efaf40bf0d8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_36b41b23d83b48ec8713e4aa4899dc80 = $(`<div id="html_36b41b23d83b48ec8713e4aa4899dc80" style="width: 100.0%; height: 100.0%;">Yolo Deaths:22 Cases:179</div>`)[0];
+            popup_02a7094cc33248bcb299efaf40bf0d8a.setContent(html_36b41b23d83b48ec8713e4aa4899dc80);
+        
+
+        circle_marker_388d5af3c12a4d3cb555132a845cccc6.bindPopup(popup_02a7094cc33248bcb299efaf40bf0d8a)
+        ;
+
+        
+    
+    
+            var circle_marker_cc35b20f81ca40f68156ce1a0e266e01 = L.circleMarker(
+                [39.2839755, -121.3556818],
+                {"bubblingMouseEvents": true, "color": "teal", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "teal", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_5c103c6613534fbc8e2fc06f9f4c59d0);
+        
+    
+        var popup_3f2054f73fba4e43a61cc095ba785320 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1fa04ce47e94db083e56b9da467dcf9 = $(`<div id="html_e1fa04ce47e94db083e56b9da467dcf9" style="width: 100.0%; height: 100.0%;">Yuba Deaths:1 Cases:25</div>`)[0];
+            popup_3f2054f73fba4e43a61cc095ba785320.setContent(html_e1fa04ce47e94db083e56b9da467dcf9);
+        
+
+        circle_marker_cc35b20f81ca40f68156ce1a0e266e01.bindPopup(popup_3f2054f73fba4e43a61cc095ba785320)
+        ;
+
+        
+    
+    
+            var marker_fd8d3025f22c4d15b8547c97e618ec2a = L.marker(
+                [35.31457, -118.753822],
+                {}
+            ).addTo(map_744a6ceb681f486ba2eb71434eb9dd6d);
+        
+    
+            var div_icon_d63b03ff3f9143bd90b98d8f9e4ab7c5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 15pt; color : black; font-weight: bold\"\u003e23.93%\u003c/div\u003e", "iconAnchor": [25, 10], "iconSize": [1, 1]});
+            marker_fd8d3025f22c4d15b8547c97e618ec2a.setIcon(div_icon_d63b03ff3f9143bd90b98d8f9e4ab7c5);
+        
+    
+            var marker_7625db89f1f446409b3f2630fd12acaa = L.marker(
+                [39.651927, -121.585844],
+                {}
+            ).addTo(map_744a6ceb681f486ba2eb71434eb9dd6d);
+        
+    
+            var div_icon_5d830ce864624e3984ffd5015cbe4034 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 15pt; color : black; font-weight: bold\"\u003e23.66%\u003c/div\u003e", "iconAnchor": [25, 10], "iconSize": [1, 1]});
+            marker_7625db89f1f446409b3f2630fd12acaa.setIcon(div_icon_5d830ce864624e3984ffd5015cbe4034);
+        
+    
+            var marker_69cdb3c307a9463cb81743da7534b3ef = L.marker(
+                [34.053691, -118.242767],
+                {}
+            ).addTo(map_744a6ceb681f486ba2eb71434eb9dd6d);
+        
+    
+            var div_icon_c8626242ee5b4236b88ea7d9d131b8f1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 15pt; color : black; font-weight: bold\"\u003e30.79%\u003c/div\u003e", "iconAnchor": [25, 10], "iconSize": [1, 1]});
+            marker_69cdb3c307a9463cb81743da7534b3ef.setIcon(div_icon_c8626242ee5b4236b88ea7d9d131b8f1);
+        
+    
+            var marker_22faaa491ae14046a36c32774e883299 = L.marker(
+                [40.796512, -121.997919],
+                {}
+            ).addTo(map_744a6ceb681f486ba2eb71434eb9dd6d);
+        
+    
+            var div_icon_111eeb8839794810af890226a7efdccd = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 15pt; color : black; font-weight: bold\"\u003e25.0%\u003c/div\u003e", "iconAnchor": [25, 10], "iconSize": [1, 1]});
+            marker_22faaa491ae14046a36c32774e883299.setIcon(div_icon_111eeb8839794810af890226a7efdccd);
+        
+    
+            var marker_727034d075294847a24835d3425781fe = L.marker(
+                [38.581572, -121.4944],
+                {}
+            ).addTo(map_744a6ceb681f486ba2eb71434eb9dd6d);
+        
+    
+            var div_icon_141c7096915640df9a8982669ab189d4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 15pt; color : black; font-weight: bold\"\u003e30.05%\u003c/div\u003e", "iconAnchor": [25, 10], "iconSize": [1, 1]});
+            marker_727034d075294847a24835d3425781fe.setIcon(div_icon_141c7096915640df9a8982669ab189d4);
+        
+    
+            var marker_1cc5e4ade2514e18a5b6300e03281114 = L.marker(
+                [32.717421, -117.162771],
+                {}
+            ).addTo(map_744a6ceb681f486ba2eb71434eb9dd6d);
+        
+    
+            var div_icon_5606af7cd8ab42ce86822464f75412d4 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 15pt; color : black; font-weight: bold\"\u003e26.46%\u003c/div\u003e", "iconAnchor": [25, 10], "iconSize": [1, 1]});
+            marker_1cc5e4ade2514e18a5b6300e03281114.setIcon(div_icon_5606af7cd8ab42ce86822464f75412d4);
+        
+    
+            var marker_7280854c95ef44e58f14dc484ae1ca17 = L.marker(
+                [37.779026, -122.419906],
+                {}
+            ).addTo(map_744a6ceb681f486ba2eb71434eb9dd6d);
+        
+    
+            var div_icon_bb1bedad5b3245b497b2c947cee74b67 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 15pt; color : black; font-weight: bold\"\u003e30.58%\u003c/div\u003e", "iconAnchor": [25, 10], "iconSize": [1, 1]});
+            marker_7280854c95ef44e58f14dc484ae1ca17.setIcon(div_icon_bb1bedad5b3245b497b2c947cee74b67);
+        
+</script>
