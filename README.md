@@ -12,11 +12,8 @@ Twitter sentiment data from California cities is currently not a good predictor 
 
 ### Contents
 [https://git.generalassemb.ly/flamingsky/ga-ds11-clientproject/tree/master/code](#Twitter and Reddit APIs)
-
 [https://git.generalassemb.ly/flamingsky/ga-ds11-clientproject/tree/master/Tweets_5_11](#Raw Tweets)
-
 [https://git.generalassemb.ly/flamingsky/ga-ds11-clientproject/tree/master/notebook](#Final Notebooks and Maps)
-
 [https://git.generalassemb.ly/flamingsky/ga-ds11-clientproject/blob/master/Mapping%20Coronavirus%20Sentiment.pdf](#Presentation Slides)
 
 ### Conclusion
