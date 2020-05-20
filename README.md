@@ -12,7 +12,6 @@ Twitter sentiment data from California cities is currently not a good predictor 
 
 ### Contents
 - [Twitter and Reddit APIs](./code)
-- [Raw Tweets](./Tweets_5_11)
 - [Final Notebooks and Maps](./notebook)
 - [Presentation Slides](./Mapping%20Coronavirus%20Sentiment.pdf)
 
